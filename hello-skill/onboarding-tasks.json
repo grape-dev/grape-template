@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "type": "experience",
+      "title": "引导·注册并体验 Skill",
+      "description": "首次托管引导：通过 Web UI 的「DevOps Skills」页面上传 hello-skill，注册到 DevOps Bot 后在聊天中发送 /hello 命令，验证技能回复正常。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "dev",
+      "title": "引导·创建自定义 Skill",
+      "description": "首次托管引导：修改 SKILL.md 中的技能名称与描述，创建一个自定义命令（如 /greet 返回个性化问候），编写 scripts/ 配套脚本，体验 Skill 的完整开发与迭代流程。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "docs",
+      "title": "引导·完善技能文档",
+      "description": "首次托管引导：完善 SKILL.md 的使用方法说明、环境变量声明与示例输出，确保技能文档清晰完整，便于团队其他成员理解与复用。",
+      "labels": ["onboarding"]
+    }
+  ]
+}

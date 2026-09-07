@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "type": "experience",
+      "title": "引导·运行待办命令",
+      "description": "首次托管引导：运行 python todo.py 体验待办清单的 add（添加）、done（标记完成）、list（列出）命令行操作，理解 sys.argv 参数读取机制。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "dev",
+      "title": "引导·扩展待办功能",
+      "description": "首次托管引导：扩展 todo.py 功能，实现 delete（删除待办项）命令与文件持久化存储（JSON 读写），让待办数据在程序重启后不丢失。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "test",
+      "title": "引导·编写功能测试",
+      "description": "首次托管引导：为 add/done/list 核心操作函数编写 unittest 单元测试，验证待办列表的增删改查逻辑正确性，体验测试驱动开发。",
+      "labels": ["onboarding"]
+    }
+  ]
+}
