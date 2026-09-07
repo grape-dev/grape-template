@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "type": "experience",
+      "title": "引导·运行计算器与测试",
+      "description": "首次托管引导：运行 python calculator.py 体验交互式计算器的加减乘除运算，执行 python -m unittest test_calculator.py 验证单元测试全部通过。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "dev",
+      "title": "引导·扩展运算功能",
+      "description": "首次托管引导：在 calculator.py 中新增幂运算（power）和取模（mod）函数，处理边界情况，并补充对应的 unittest 测试用例。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "review",
+      "title": "引导·提交 PR 体验审查",
+      "description": "首次托管引导：将新增运算功能提交到新分支并创建 Pull Request，体验 Grape 的 Code Review 流程（自动审查 + 安全扫描）。",
+      "labels": ["onboarding"]
+    }
+  ]
+}
