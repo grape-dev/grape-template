@@ -2,20 +2,8 @@
   "tasks": [
     {
       "type": "experience",
-      "title": "引导·部署 Flask 服务",
-      "description": "首次托管引导：安装依赖（pip install -r requirements.txt）并运行 python app.py，访问 http://localhost:5000 验证 Hello World 页面正常返回。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "dev",
-      "title": "引导·扩展 Flask 路由",
-      "description": "首次托管引导：在 app.py 中新增一个路由（如 /about），体验 Flask 动态路由 @app.route 与返回 HTML 字符串的机制。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "test",
-      "title": "引导·编写路由测试",
-      "description": "首次托管引导：使用 Flask 内置 test_client 编写接口测试，验证首页返回 200 状态码及新增路由的响应内容，体验 Flask 测试驱动开发。",
+      "title": "引导·部署心情追踪器",
+      "description": "首次托管引导：通过 Grape 流水线部署心情追踪器应用。流水线将自动分析需求、准备部署、审查代码并部署到云服务器。部署完成后，访问返回的部署地址，体验心情记录和查看统计功能，验证 /health 接口返回正常。\n\n部署成功后，请在 GitCode 仓库的 Issue 中手动提交下一步开发需求，例如：\n-「新增 /api/export 端点，支持按日期过滤导出 JSON 数据」\n-「为 /api/export 编写单元测试」\n\n详细指引请参考仓库 README.md。",
       "labels": ["onboarding"]
     }
   ]
