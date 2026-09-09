@@ -108,7 +108,7 @@ h1{text-align:center;font-size:22px;margin:10px 0 6px}
 
 <div class="card">
 <div class="mood-pick" id="moodPick">
-{{ MOODS }}
+{{ MOODS | safe }}
 </div>
 <input class="note-input" id="noteInput" placeholder="\u5907\u6ce8\uff08\u53ef\u9009\uff09\uff0c\u5982\uff1a\u4eca\u5929\u5b8c\u6210\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u529f\u80fd" maxlength="200">
 <button class="submit-btn" id="submitBtn" disabled>\u8bb0\u5f55\u5fc3\u60c5</button>
@@ -136,7 +136,7 @@ h1{text-align:center;font-size:22px;margin:10px 0 6px}
 </div>
 <script>
 var selScore=0;
-var MOODS={{ MOODS_JSON }};
+var MOODS={{ MOODS_JSON | safe }};
 var COLORS={5:'#4caf50',4:'#8bc34a',3:'#ffc107',2:'#ff9800',1:'#f44336'};
 function renderPicker(){
   var h='';
