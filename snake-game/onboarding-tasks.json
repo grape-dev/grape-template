@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "type": "experience",
+      "title": "引导·部署贪吃蛇游戏",
+      "description": "首次托管引导：通过 Grape 流水线部署贪吃蛇游戏。部署完成后，访问返回的部署地址，用方向键控制蛇移动，吃食物得分，验证 /health 接口返回正常。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "dev",
+      "title": "引导·扩展游戏功能",
+      "description": "首次托管引导：新增障碍物模式（随机生成墙壁，蛇撞到即结束），或新增双人对战模式，体验游戏功能扩展与 Canvas 渲染。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "test",
+      "title": "引导·编写游戏测试",
+      "description": "首次托管引导：为 /health 端点编写测试，并为游戏核心逻辑（碰撞检测、食物生成、计分）编写单元测试，体验测试驱动开发。",
+      "labels": ["onboarding"]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "type": "experience",
+      "title": "引导·运行博客系统",
+      "description": "首次托管引导：安装依赖并运行 python blog_api.py，体验基于 Flask 的博客系统 API，测试文章的增删改查接口。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "dev",
+      "title": "引导·扩展博客功能",
+      "description": "首次托管引导：新增用户注册/登录接口，或为博客文章添加标签分类功能，体验 RESTful API 设计与 Flask 路由扩展。",
+      "labels": ["onboarding"]
+    },
+    {
+      "type": "test",
+      "title": "引导·编写接口测试",
+      "description": "首次托管引导：使用 unittest 或 pytest 为博客 API 编写测试，验证文章 CRUD 操作的正确性与边界情况处理。",
+      "labels": ["onboarding"]
+    }
+  ]
+}
