@@ -1,22 +1,20 @@
 {
-  "tasks": [
-    {
-      "type": "experience",
-      "title": "引导·部署博客服务",
-      "description": "首次托管引导：安装依赖并运行 python app.py，访问 http://localhost:5000 验证博客首页列表展示与 /post/<id> 文章详情页路由正常工作。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "dev",
-      "title": "引导·扩展博客功能",
-      "description": "首次托管引导：扩展博客功能，实现文章列表分页（分页参数与页码导航）或评论模块（提交与展示评论），体验 Flask 动态路由与模板渲染的进阶用法。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "ci",
-      "title": "引导·配置 CI 流水线",
-      "description": "首次托管引导：为博客项目配置 CI/CD 流水线（如 .gitcode-ci.yml），定义自动测试、构建与部署阶段，体验 Grape 的自动化构建与持续集成流程。",
-      "labels": ["onboarding"]
-    }
-  ]
+    "tasks": [
+        {
+            "type": "experience",
+            "title": "引导·部署博客服务",
+            "description": "首次托管引导：通过 Grape 流水线部署博客应用。在 Issue 中输入「帮我部署当前项目」，流水线将自动分析需求并部署。部署完成后，访问返回的地址验证博客首页列表展示与 /post/<id> 文章详情页路由正常工作。",
+            "labels": [
+                "onboarding"
+            ]
+        },
+        {
+            "type": "dev",
+            "title": "引导·扩展博客功能",
+            "description": "首次托管引导：在 GitCode 仓库的 Issue 中提交开发需求，例如：\n-「实现文章列表分页功能，添加分页参数与页码导航」\n-「新增评论模块，支持提交与展示评论」\n\n提交后流水线将自动接管，体验 Issue→开发→PR→部署的完整流程。详细指引请参考仓库 README.md。",
+            "labels": [
+                "onboarding"
+            ]
+        }
+    ]
 }

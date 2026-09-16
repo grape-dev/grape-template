@@ -1,22 +1,20 @@
 {
-  "tasks": [
-    {
-      "type": "experience",
-      "title": "引导·部署 FastAPI 服务",
-      "description": "首次托管引导：安装依赖并运行 uvicorn app.main:app --reload --port 8000，验证 / 和 /health 接口返回正常，浏览 http://localhost:8000/docs 查看自动生成的交互式 API 文档。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "dev",
-      "title": "引导·新增 API 接口",
-      "description": "首次托管引导：在 app/main.py 中新增一个接口（如 GET /items 返回列表），体验 FastAPI 类型声明、参数校验与自动文档更新。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "deploy",
-      "title": "引导·生产环境部署",
-      "description": "首次托管引导：使用 Gunicorn + Uvicorn worker 部署 FastAPI 服务（gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker），体验生产级部署配置。",
-      "labels": ["onboarding"]
-    }
-  ]
+    "tasks": [
+        {
+            "type": "experience",
+            "title": "引导·部署 FastAPI 服务",
+            "description": "首次托管引导：通过 Grape 流水线部署 FastAPI 服务。在 Issue 中输入「帮我部署当前项目」，流水线将自动分析需求并部署到云服务器。部署完成后，访问返回的部署地址，验证 / 和 /health 接口返回正常，浏览 /docs 查看自动生成的交互式 API 文档。",
+            "labels": [
+                "onboarding"
+            ]
+        },
+        {
+            "type": "dev",
+            "title": "引导·新增 API 接口",
+            "description": "首次托管引导：在 GitCode 仓库的 Issue 中提交开发需求，例如：\n-「新增 GET /items 接口，返回示例列表数据」\n-「为 /items 接口添加查询参数校验与类型声明」\n\n提交后流水线将自动接管，体验 Issue→开发→PR→部署的完整流程。详细指引请参考仓库 README.md。",
+            "labels": [
+                "onboarding"
+            ]
+        }
+    ]
 }

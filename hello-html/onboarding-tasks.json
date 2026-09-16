@@ -1,22 +1,20 @@
 {
-  "tasks": [
-    {
-      "type": "experience",
-      "title": "引导·部署静态页面",
-      "description": "首次托管引导：使用 python -m http.server 8080 启动静态服务器，浏览器访问 http://localhost:8080 验证 HTML 结构、CSS 渐变背景与 JavaScript 事件监听渲染正常。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "dev",
-      "title": "引导·增强页面交互",
-      "description": "首次托管引导：在 index.html 中添加新的交互组件（如计数器按钮或表单输入），编写对应 script.js 事件逻辑与 style.css 样式，体验前端 DOM 操作与事件驱动开发。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "deploy",
-      "title": "引导·静态站点部署",
-      "description": "首次托管引导：配置 Nginx 或静态托管服务部署 index.html 页面，体验将静态站点发布到生产环境的完整流程。",
-      "labels": ["onboarding"]
-    }
-  ]
+    "tasks": [
+        {
+            "type": "experience",
+            "title": "引导·部署静态网页",
+            "description": "首次托管引导：通过 Grape 流水线部署静态网页。在 Issue 中输入「帮我部署当前项目」，流水线将自动分析需求并部署。部署完成后，访问返回的地址验证 HTML 结构、CSS 渐变背景与 JavaScript 事件监听渲染正常。",
+            "labels": [
+                "onboarding"
+            ]
+        },
+        {
+            "type": "dev",
+            "title": "引导·增强页面交互",
+            "description": "首次托管引导：在 GitCode 仓库的 Issue 中提交开发需求，例如：\n-「在 index.html 中添加计数器按钮，编写对应 script.js 事件逻辑与 style.css 样式」\n-「新增表单输入组件，支持用户提交自定义内容并渲染到页面」\n\n提交后流水线将自动接管，体验 Issue→开发→PR→部署的完整流程。详细指引请参考仓库 README.md。",
+            "labels": [
+                "onboarding"
+            ]
+        }
+    ]
 }

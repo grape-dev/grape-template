@@ -1,22 +1,20 @@
 {
-  "tasks": [
-    {
-      "type": "experience",
-      "title": "引导·运行待办命令",
-      "description": "首次托管引导：运行 python todo.py 体验待办清单的 add（添加）、done（标记完成）、list（列出）命令行操作，理解 sys.argv 参数读取机制。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "dev",
-      "title": "引导·扩展待办功能",
-      "description": "首次托管引导：扩展 todo.py 功能，实现 delete（删除待办项）命令与文件持久化存储（JSON 读写），让待办数据在程序重启后不丢失。",
-      "labels": ["onboarding"]
-    },
-    {
-      "type": "test",
-      "title": "引导·编写功能测试",
-      "description": "首次托管引导：为 add/done/list 核心操作函数编写 unittest 单元测试，验证待办列表的增删改查逻辑正确性，体验测试驱动开发。",
-      "labels": ["onboarding"]
-    }
-  ]
+    "tasks": [
+        {
+            "type": "experience",
+            "title": "引导·部署待办清单工具",
+            "description": "首次托管引导：通过 Grape 流水线部署待办命令行工具。在 Issue 中输入「帮我部署当前项目」，流水线将自动分析需求并部署。部署完成后，访问返回的地址体验 add（添加）、done（标记完成）、list（列出）命令行操作，理解 sys.argv 参数读取机制。",
+            "labels": [
+                "onboarding"
+            ]
+        },
+        {
+            "type": "dev",
+            "title": "引导·扩展待办功能",
+            "description": "首次托管引导：在 GitCode 仓库的 Issue 中提交开发需求，例如：\n-「新增 delete 命令删除待办项」\n-「实现 JSON 文件持久化存储，让待办数据在程序重启后不丢失」\n\n提交后流水线将自动接管，体验 Issue→开发→PR→部署的完整流程。详细指引请参考仓库 README.md。",
+            "labels": [
+                "onboarding"
+            ]
+        }
+    ]
 }
