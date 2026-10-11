@@ -40,28 +40,29 @@
 
 ## 模板注册表结构
 
-`project-templates.json` 按分类（`categories`）组织全部模板。其中两个 `*-featured` 分类每日自动同步，
+`project-templates.json` 按分类（`categories`）组织全部模板。其中 `cloud-native` 与 `iac` 分类每日自动同步，
 条目数随同步结果浮动：
 
 | category `id` | 分类名 | scene | 条目数 | 说明 |
 |---|---|---|---|---|
-| `hello-world` | Hello World 新手模板 | default | 15 | 本地 6 + GitCode 热门 git 模板 9（随机模式） |
-| `agent-best-practices` | Agent 最佳实践 | default | 7 | `agent-best-practices` 组织沉淀的 AI Agent 实战模板 |
-| `skills` | Skills 项目模板 | skill-dev | 1 | 本地 `hello-skill` |
-| `ai-office` | AI office 项目模板 | default | 1 | AI 办公场景应用模板 |
-| `cloud-native` | 云原生项目模板 | cloud-native | 6 | 容器化 / 微服务项目起点 |
-| `iac` | IaC 项目模板 | iac | 1 | 基础设施即代码项目起点 |
-| `gitcode-featured` | GitCode 优选项目模板 | default | 101 | GitCode 云原生热门项目，每日自动同步 |
-| `github-featured` | GitHub 优选项目模板 | default | 42 | GitHub 云原生热门项目，每日自动同步 |
+| `hello-world` | 👋 Hello World 新手模板 | hello-world | 15 | 本地 7 + GitCode 热门 git 模板 8（随机模式） |
+| `general` | ⚙ 通用项目模板 | default | 3 | 通用型 git 模板 |
+| `mobile` | 🍃 移动开发项目模板 | harmony | 2 | HarmonyOS / 移动端 git 模板 |
+| `cloud-native` | ☁ 云原生开发 | cloud-native | 110 | 云原生精选仓库，每日自动同步 |
+| `iac` | 🏗️ IaC 开发 | iac | 22 | IaC 精选仓库，每日自动同步 |
+| `skill-dev` | 🔧 技能开发项目模板 | skill-dev | 1 | 本地 `hello-skill` |
+| `ai` | 🤖 AI应用项目模板 | agent-dev | 20 | AI 应用 git 模板 |
+| `content` | 📝 内容创作项目模板 | blog-publish | 3 | 博客 / 内容创作 git 模板 |
 
 ## 本地模板列表
 
-- `hello-flask` — 极简 Flask Web 应用（default 场景）
-- `hello-fastapi` — 极简 FastAPI 服务（default 场景）
-- `hello-todo` — 命令行待办清单（default 场景）
-- `hello-calculator` — 计算器 + 单元测试（default 场景）
-- `hello-html` — 静态网页前端三件套（default 场景）
-- `hello-blog` — Flask 多页博客骨架（default 场景）
+- `hello-flask` — 心情追踪器：Flask Web 应用，含 5 个 API 端点与单元测试（hello-world 场景）
+- `hello-fastapi` — 极简 FastAPI 服务（hello-world 场景）
+- `hello-todo` — 命令行待办清单（hello-world 场景）
+- `hello-calculator` — 计算器 + 单元测试（hello-world 场景）
+- `hello-html` — 静态网页前端三件套（hello-world 场景）
+- `hello-blog` — Flask 多页博客骨架（hello-world 场景）
+- `snake-game` — 经典贪吃蛇小游戏（已转为本地模板，hello-world 场景）
 - `hello-skill` — 最小 Skill 项目模板（skill-dev 场景）
 
 ## 新增模板
@@ -71,8 +72,8 @@
 1. 新建模板目录，目录名即模板 `id`
 2. 在 `project-templates.json` 中登记该 `id` 且 `"source": "local"`
 
-目录与注册表不一致会导致 grape 侧 `test_local_template_dir_exists` 门禁失败。
-git 模板只需在注册表中维护一条 `source: "git"` 条目即可。
+> 注意：每一条 `source: "local"` 都必须有同名目录，否则 grape 侧 `test_local_template_dir_exists` 门禁失败；
+> `source: "git"` 的目录则保持 `git` 来源即可，二者不混用。
 
 ## 使用
 
