@@ -1,5 +1,35 @@
+# Python
 __pycache__/
-*.pyc
-.pytest_cache/
+*.py[cod]
+*.egg-info/
+*.egg
 .venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+wheels/
+*.so
+
+# Environment & secrets (never commit real values)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temp / local scratch
+temp/
+data/
+logs/
+*.log
+
+# Editors & OS
 .DS_Store
+.idea/
+.vscode/
+*.swp
